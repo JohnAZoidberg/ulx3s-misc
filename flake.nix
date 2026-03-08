@@ -37,7 +37,7 @@
 
           buildPhase = ''
             cd ${dir}
-            make -f ${makefile} FPGA_SIZE=${size} FPGA_PACKAGE=${fpgaPackage size}
+            make -f ${makefile} all FPGA_SIZE=${size} FPGA_PACKAGE=${fpgaPackage size}
           '';
 
           installPhase = ''
